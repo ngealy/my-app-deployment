@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
 - ../../base
 namePrefix: ngealy-
+configMapGenerator:
+- name: the-map
+  files:
+  - the-map.env
